@@ -30,7 +30,7 @@
     
     <!-- <div id="user-hello"></div> -->
     {{ room_name|json_script:"room-name" }}
-    {{ reuest.user.username|json_script:"user_username" }}
+    {{ user.username|json_script:"user_username" }}
     <script>
         const user_username = JSON.parse(document.getElementById('user_username').textContent);
         const roomName = JSON.parse(document.getElementById('room-name').textContent);
